@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍌Nano-banana</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍌 Nano-banana</h1>
+            <p>基于 OpenRouter 的I2I AI图片编辑器</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="api-key-section">
+                    <label for="apiKey">OpenRouter API Key:</label>
+                    <div class="api-key-input-group">
+                        <input type="password" id="apiKey" placeholder="输入你的 OpenRouter API Key..." />
+                        <button id="testApiBtn" class="test-api-btn">
+                            <span id="testBtnText">测试连接</span>
+                            <div id="testStatus" class="status-indicator"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="upload-section">
+                    <label for="imageUpload">上传图片:</label>
+                    <div class="upload-area" id="uploadArea">
+                        <input type="file" id="imageUpload" accept="image/*" multiple />
+                        <div class="upload-placeholder">
+                            <p>📸 点击或拖拽图片到此处</p>
+                            <p>支持 JPG、PNG、WebP 格式</p>
+                        </div>
+                    </div>
+                    <div class="image-preview" id="imagePreview"></div>
+                </div>
+
+                <div class="prompt-section">
+                    <label for="prompt">提示词:</label>
+                    <textarea id="prompt" placeholder="描述你想要的图片效果..." rows="4"></textarea>
+                </div>
+
+                <div class="generate-section">
+                    <button id="generateBtn" class="generate-btn">
+                        <span id="btnText">🎨 生成图片</span>
+                        <div id="loadingSpinner" class="spinner"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <div id="resultArea" class="result-area">
+                    <div class="placeholder">
+                        <p>✨ 生成的图片将在这里显示</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Nanobanana. 基于 OpenRouter API 构建 作者：xiaohao</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

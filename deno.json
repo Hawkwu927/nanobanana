@@ -1,0 +1,25 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.208.0/"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch main.ts",
+    "test": "deno run --allow-net --allow-env test_server.ts",
+    "deploy": "deno deploy --prod --allow-net --allow-env"
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["dom", "dom.iterable", "esnext", "deno.ns"],
+    "strict": false
+  },
+  "deploy": {
+    "entrypoint": "main.ts",
+    "include": [
+      "**/*.ts",
+      "**/*.js",
+      "**/*.html",
+      "**/*.css",
+      "**/*.json"
+    ]
+  }
+}
