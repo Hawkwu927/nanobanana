@@ -1,3 +1,4 @@
+**文档来源：xiguapiwork/nanobanana**
 # Nanobanana - OpenRouter Gemini API 代理 & 图片生成 Web UI
 
 本项目已经从一个简单的 Web 应用进化为一个功能强大的双用途服务。它既是一个 **兼容 Google Gemini API 的 OpenRouter 代理服务器**，又提供了一个直观的 **Web 用户界面**，让您可以轻松地与多模态模型进行交互。
